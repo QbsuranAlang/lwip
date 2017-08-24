@@ -32,7 +32,6 @@
 #ifndef __LWIPOPTS_H__
 #define __LWIPOPTS_H__
 
-
 #define LWIP_COMPAT_MUTEX_ALLOWED
 #define LWIP_DISABLE_TCP_SANITY_CHECKS 1
 
