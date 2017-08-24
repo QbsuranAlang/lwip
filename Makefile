@@ -3,7 +3,7 @@ CC = $(CROSS_COMPILE_PREFIX)gcc
 AR = $(CROSS_COMPILE_PREFIX)ar
 PREFIX = ./target
 
-LIB=libiwip.a
+LIB=liblwip.a
 PORT_DIR = arch
 CFLAGS = -Wall -Isrc/include -I$(PORT_DIR) -I.
 
