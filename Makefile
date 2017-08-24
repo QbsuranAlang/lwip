@@ -1,4 +1,4 @@
-CROSS_COMPILE_PREFIX=
+CROSS_COMPILE_PREFIX=mips64-octeon-linux-gnu-
 CC = $(CROSS_COMPILE_PREFIX)gcc
 AR = $(CROSS_COMPILE_PREFIX)ar
 PREFIX = ./target
@@ -19,10 +19,8 @@ clean:
 
 install: $(LIB)
 	mkdir -p $(PREFIX)/lib
+	mkdir -p $(PREFIX)/include
 	cp $(LIB) $(PREFIX)/lib
 	cp -R src/include $(PREFIX)
 
-uninstall:
-	rm -rf $(PREFIX)
-
-.PHONY: clean install uninstall
+.PHONY: clean install
